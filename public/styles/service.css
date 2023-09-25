@@ -1,0 +1,365 @@
+.container {
+  padding: 1.5rem 4rem;
+}
+/* hero Section  */
+.heroSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 250px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+}
+.heroText h3 {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 117px */
+  letter-spacing: 3.6px;
+  text-transform: capitalize;
+}
+.heroText p {
+  color: #0a142f;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.heroImg img {
+  width: 100%;
+  max-width: 650px;
+  min-width: 100px;
+  height: 400px;
+}
+/* End Of Hero Section  */
+/* service Section  */
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 6rem 0;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 1100px;
+}
+.serviceText {
+  width: 100%;
+  min-width: 250px;
+  max-width: 650px;
+  align-self: flex-start;
+}
+.serviceText .serviceSubtitle {
+  color: #0a142f;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.serviceText .serviceTitle {
+  color: #141414;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.serviceText .serviceDesc {
+  color: #595959;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 31.5px */
+  letter-spacing: 0.36px;
+}
+.underline {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.service img {
+  width: 100%;
+  min-width: 250px;
+  max-width: 600px;
+}
+/* End Of Service Section  */
+/* passion Section  */
+.passionSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Testimonial\ section.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #0a142f;
+  color: #fff;
+  padding: 2rem;
+}
+.passion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.passionText {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+}
+.passionText .passionTextTitle {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+.passionPoints {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 3.5rem;
+}
+.passionPoints img {
+  width: 40px;
+  height: 40px;
+}
+.passionPoints .passionPointsTitle {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 29.9px */
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.passionPoints .passionPointsDesc {
+  color: #a1a1a1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.passionImg img {
+  min-width: 300px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  height: 100%;
+}
+/* End Of Passion Section  */
+/* contactUs Section  */
+.contactUsSection {
+  background: #fafafa;
+  padding: 6rem;
+}
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.contactHeading p {
+  color: #0a142f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.contactHeading h3 {
+  color: #141414;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.contactHeading h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.contactText {
+  width: 100%;
+  min-width: 200px;
+  max-width: 550px;
+}
+.contactText p {
+  color: #141414;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.contactText a button {
+  border: 1px solid #a1a1a1;
+  margin-top: 30px;
+  padding: 8px 32px;
+  background: transparent;
+  color: #595959;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.contactText a button:hover {
+  color: #fafafa;
+  background-color: #0a142f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* End of ContactUs section */
+@media screen and (max-width: 576px) {
+  /* hero Section  */
+  .hero {
+    gap: 2rem;
+  }
+  .heroText {
+    align-items: center;
+  }
+  .heroText h3 {
+    font-size: 45px;
+  }
+  /* End of Hero Section  */
+  /* service Section  */
+  .service {
+    padding: 4rem 2rem;
+  }
+  .services {
+    flex-wrap: wrap;
+  }
+  /* End of service Section  */
+  /* passion Section  */
+  .passion {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .passionText .passionTextTitle {
+    margin-bottom: 2rem;
+  }
+  .passionPoints {
+    margin-bottom: 1.5rem;
+  }
+  .passionPoints img {
+    width: 30px;
+    height: 30px;
+  }
+  /* End Of Passion Section */
+  /* contactUs Section  */
+  .contactUsSection {
+    padding: 4.6rem 2.3rem;
+  }
+  .contactUs {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .contactHeading p {
+    font-size: 13px;
+  }
+  .contactHeading h3 {
+    font-size: 30px;
+  }
+  .contactText p {
+    font-size: 13px;
+  }
+  .contactText a button {
+    font-size: 13px;
+  }
+  /* End of ContactUs section */
+}
+@media (min-width: 577px) and (max-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 992px) {
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+@media (min-width: 1400px) {
+  /* hero Section  */
+  .heroText h3 {
+    font-size: 75px;
+  }
+  .heroText p {
+    font-size: 16px;
+  }
+  .heroImg img {
+    max-width: 1000px;
+  }
+  /* End of Hero Section  */
+  /* service Section  */
+  .services {
+    max-width: 1600px;
+  }
+  .serviceText {
+    max-width: 800px;
+  }
+  .service img {
+    max-width: 700px;
+  }
+  .serviceText .serviceTitle {
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  .serviceText .serviceDesc {
+    font-size: 17px;
+  }
+  /* End of Service section  */
+  /* contactUs Section  */
+  .contactUs {
+    gap: 120px;
+  }
+  .contactHeading p {
+    font-size: 16px;
+  }
+  .contactHeading h3 {
+    font-size: 64px;
+  }
+  .contactText {
+    width: 100%;
+    max-width: 800px;
+  }
+  .contactText p {
+    font-size: 18px;
+  }
+  .contactText a button {
+    padding: 8px 32px;
+    font-size: 18px;
+  }
+  /* End of ContactUs section */
+}

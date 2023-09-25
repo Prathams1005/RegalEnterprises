@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles Link-->
+    <link rel="stylesheet" href="../public/styles/nav.css" />
+    <link rel="stylesheet" href="../public/styles/portfolio.css" />
+    <link rel="stylesheet" href="../public/styles/footer.css" />
+    <!-- Google Fonts Playfair Display and Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body id="portfolio">
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("../views/static/nav.html");
+      });
+    </script>
+    <script src="/public/JS/nav.js"></script>
+    <!--end of Navigation bar-->
+    <!-- heroSection  -->
+    <section class="heroSection">
+      <div class="hero">
+        <div class="heroText">
+          <h3>Portfolio</h3>
+          <p>Home > Portfolio</p>
+        </div>
+        <div class="heroImg">
+          <img src="../public/images/Photos/regal.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end of heroSection  -->
+    <!-- Gallery Section  -->
+    <section class="gallerySection">
+      <div class="gallery container">
+        <div class="galleryNavigation">
+          <li>
+            <p
+              id="allCategory"
+              class="active"
+              onclick="filterImages('all', 'allCategory')"
+            >
+              All
+            </p>
+          </li>
+          <li>
+            <p
+              id="interiorCategory"
+              onclick="filterImages('interior', 'interiorCategory')"
+            >
+              Interior
+            </p>
+          </li>
+          <li>
+            <p
+              id="exteriorCategory"
+              onclick="filterImages('exterior', 'exteriorCategory')"
+            >
+              Exterior
+            </p>
+          </li>
+          <li>
+            <p
+              id="slidingsCategory"
+              onclick="filterImages('slidings', 'slidingsCategory')"
+            >
+              Slidings
+            </p>
+          </li>
+          <li>
+            <p
+              id="constructionCategory"
+              onclick="filterImages('construction', 'constructionCategory')"
+            >
+              Construction
+            </p>
+          </li>
+        </div>
+        <div class="galleryPhotos">
+          <ul>
+            <li class="interior">
+              <img
+                src="../public/images/Photos/gallery1.jpg"
+                alt=""
+                onclick="openModal('../public/images/Photos/gallery1.jpg', 'Caption 1')"
+              />
+            </li>
+            <li class="exterior">
+              <img
+                src="../public/images/Photos/gallery2.jpg"
+                alt=""
+                onclick="openModal('../public/images/Photos/gallery2.jpg', 'Caption 2')"
+              />
+            </li>
+            <li class="interior">
+              <img
+                src="../public/images/Photos/gallery3.jpg"
+                alt=""
+                onclick="openModal('../public/images/Photos/gallery3.jpg', 'Caption 3')"
+              />
+            </li>
+            <li class="slidings">
+              <img
+                src="../public/images/Photos/gallery4.jpg"
+                alt=""
+                onclick="openModal('../public/images/Photos/gallery4.jpg', 'Caption 4')"
+              />
+            </li>
+            <li class="construction">
+              <img
+                src="../public/images/Photos/gallery5.jpg"
+                alt=""
+                onclick="openModal('../public/images/Photos/gallery5.jpg', 'Caption 5')"
+              />
+            </li>
+            <!-- Add more images with appropriate categories -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="" id="modal-image" alt="" />
+      <div id="caption"></div>
+    </div>
+    <!-- End of Gallery Section  -->
+    <!-- contactUs Section  -->
+    <section class="contactUsSection">
+      <div class="contactUs container">
+        <div class="contactHeading">
+          <p>Contact US</p>
+          <h3>Free <span>Consultation</span></h3>
+        </div>
+        <div class="contactText">
+          <p>
+            Unlock the potential of your dream project with our expert guidance.
+            Schedule a free consultation now, and our team of professionals will
+            be delighted to discuss your ideas, answer your questions, and
+            provide tailored recommendations to bring your vision to life.
+          </p>
+          <a href="../views/contactus.html"><button>Contact Us</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- End of ContactUs section -->
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("../views/static/footer.html");
+      });
+    </script>
+    <!--end of footer-->
+    <script src="/RegalEnterprises/public/JS/nav.js"></script>
+    <script src="../public/JS/portfolio.js"></script>
+  </body>
+</html>

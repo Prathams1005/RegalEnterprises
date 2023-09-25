@@ -1,0 +1,260 @@
+.container {
+  padding: 1.5rem 4rem;
+}
+/* hero Section  */
+.heroSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 250px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+}
+.heroText h3 {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 117px */
+  letter-spacing: 3.6px;
+  text-transform: capitalize;
+}
+.heroText p {
+  color: #0a142f;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.heroImg img {
+  width: 100%;
+  max-width: 650px;
+  min-width: 100px;
+  height: 400px;
+}
+
+/* End Of Hero Section  */
+/* ContactUS Section  */
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.contactUsHead p {
+  color: #0a142f;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.contactUsHead h3 {
+  color: #141414;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.contactUsHead h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.contactUsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+}
+.contactUsAdd p {
+  color: #595959;
+}
+.contactUsAdd p a {
+  color: #595959;
+  text-decoration: none;
+}
+.contactUsAdd .email {
+  margin: 10px 0 30px 0;
+}
+.gmap img {
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+}
+.contactUsRight {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  gap: 15px;
+}
+.contactUsRight label {
+  color: #141414;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.contactUsRight input {
+  background: #ededed;
+  border: none;
+  height: 25px;
+}
+.contactUsRight textarea {
+  background: #ededed;
+  border: none;
+  resize: inherit;
+}
+.contactUsRight div button {
+  border-radius: 10px;
+  background: #0a142f;
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+  padding: 8px 32px;
+  border: none;
+}
+.contactUsRight div button:hover {
+  background: #f5f5f5;
+  color: #0a142f;
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0a142f;
+}
+/* end of contact section  */
+
+/* mail Section  */
+.mailUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14.6875rem;
+  width: 100%;
+  min-width: 250px;
+}
+.mailUsText {
+  width: 100%;
+  min-width: 250px;
+}
+.mailUsText h3 {
+  color: #141414;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 41.6px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.mailUsText p {
+  color: #595959;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+  margin-top: 10px;
+}
+.mailUsBtn button {
+  padding: 8px 32px;
+  border: 1px solid #a1a1a1;
+}
+.mailUsBtn button:hover {
+  background: #0a142f;
+  color: #f5f5f5;
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* End Of Mail Section  */
+
+@media screen and (max-width: 576px) {
+  /* hero Section  */
+  .hero {
+    gap: 2rem;
+  }
+  .heroText {
+    align-items: center;
+  }
+  .heroText h3 {
+    font-size: 55px;
+  }
+  /* End of Hero Section  */
+  /* contactUs Section  */
+  .contactUs {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  /* End Of ContactUs Section  */
+  /* mail Section  */
+  .mailUs {
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 1rem 2rem;
+  }
+  /* End of Mail Section  */
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  /* hero Section  */
+  .heroText h3 {
+    font-size: 75px;
+  }
+  .heroText p {
+    font-size: 16px;
+  }
+  .heroImg img {
+    max-width: 1000px;
+  }
+  /* End of Hero Section  */
+  /* contactUs Section  */
+  .contactUs {
+    gap: 140px;
+  }
+  .mailUs {
+    gap: 18rem;
+  }
+  /* End Of ContactUs Section  */
+}

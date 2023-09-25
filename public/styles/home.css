@@ -1,0 +1,1781 @@
+.container {
+  padding: 1.5em 4rem;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.heroSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+}
+
+.hero-leftSection {
+  display: flex;
+  gap: 1.5em;
+}
+
+.heroLinks {
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  align-items: center;
+}
+
+.hero-leftSection .heroLinks a {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-decoration: none;
+  color: #141414;
+}
+
+.heroHead > p {
+  font-size: 14px;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 0.32px;
+}
+
+.heroHead .hero-greet {
+  color: #002c66;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.herotext {
+  color: #595959;
+  margin: 1rem 0;
+}
+
+.heroHead h2 {
+  font-size: 3.75rem;
+  font-weight: normal;
+  color: #141414;
+  padding: 2px;
+  line-height: 1em;
+}
+
+.hero-leftSection .heroHead a button {
+  /* Explore button */
+  padding: 8px 32px;
+  color: #595959;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  background: none;
+  border: 1px solid #a1a1a1;
+}
+
+.hero-leftSection .heroHead a button:hover {
+  /* explore button */
+  background: #002c66;
+  color: #f5f5f5;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-rightSection img {
+  width: 600px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.hero-rightSection {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.carouseltoggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carouseltoggle h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.carouseltitle {
+  color: #002c66;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Container for the horizontal slider */
+.horizontal-slider-container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  /* Adjust the max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  /* Hide overflowing content */
+  position: relative;
+  /* Add this for relative positioning */
+}
+
+/* Wrapper for the slider items */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* Smooth sliding transition */
+}
+
+/* Individual slider item */
+.slider-item {
+  flex: 0 0 100%;
+  /* Each item takes up 100% of the container */
+  padding: 0 10px;
+  /* Add some spacing between items */
+  box-sizing: border-box;
+}
+
+/* Previous and Next buttons */
+.slider-button {
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  /* Add z-index to appear above slider */
+}
+
+.slider-button.prev {
+  left: 0;
+}
+
+.slider-button.next {
+  right: 0;
+}
+
+/* Numeric pagination buttons */
+.slider-pagination {
+  text-align: center;
+}
+
+.pagination-button {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.pagination-button.active {
+  color: #002c66;
+  /* Change the active button color */
+}
+
+/* End of hero section */
+
+/* workSection */
+.workSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/How\ we\ work\ section.png");
+  background-size: 30rem 31.875rem;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-title p {
+  text-transform: uppercase;
+  color: #002c66;
+}
+
+.work-title h3 {
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+.work-title h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+
+.work-Cards {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+/* Add this style for the work cards */
+.work-Cards {
+  display: flex;
+  justify-content: center;
+  gap: 86px;
+  margin-top: 30px;
+}
+
+.workCard {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.workCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 26, 60, 0.8);
+}
+
+.workCard img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Add this style for the additional info on hover */
+.workCard .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 26, 60, 0.8);
+  /* Transparent blue background */
+  gap: 32px;
+}
+
+.workCard:hover .info {
+  opacity: 1;
+}
+
+.workCard .info {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.workCard .info p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 0.32px;
+}
+
+.workCard img {
+  width: 280px;
+  height: 400px;
+}
+
+/* end of workSection */
+
+/* serviceSection */
+.serviceSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Services\ section.png");
+  background-size: 30rem 31.875rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5rem;
+}
+
+.serviceText {
+  display: flex;
+  justify-content: center;
+  gap: 9.9375rem;
+}
+
+.serviceHead {
+  width: 40%;
+}
+
+.serviceHead p {
+  color: #002c66;
+  font-weight: 600;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.serviceHead h3 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+
+.serviceHead h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+
+.serviceDesc {
+  display: flex;
+  justify-content: center;
+  color: #595959;
+  font-size: 14px;
+  line-height: 175%;
+  /* 31.5px */
+  letter-spacing: 0.36px;
+}
+
+.serviceBtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.serviceBtn a .serviceLearnMore {
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  background: transparent;
+  padding: 8px 32px;
+  color: #595959;
+  border: 1px solid #595959;
+}
+
+.serviceBtn a .serviceLearnMore:hover {
+  background: #002c66;
+  color: #f5f5f5;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.serviceImg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  height: 300px;
+}
+
+.serviceImg a {
+  text-decoration: none;
+  color: #141414;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+  /* 41.6px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+
+.serviceImg h3 {
+  margin-top: 10px;
+}
+
+.serviceImg .serviceImg2 {
+  align-self: flex-end;
+}
+
+.serviceImg img {
+  max-width: 100%;
+  width: 350px;
+  height: 200px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.serviceImg img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* end of serviceSection */
+/* aboutus Section  */
+.aboutus {
+  background-color: #0a142f;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  gap: 1rem;
+}
+
+.aboutusText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #fff;
+}
+
+.aboutusText p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 0.32px;
+  margin: 20px 0;
+}
+
+.aboutusText .aboutusintro {
+  color: #f37b20;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.aboutusText h3 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 130%;
+  /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+
+.aboutusImg img {
+  width: 700px;
+  height: 400px;
+}
+
+.aboutusText div a button {
+  padding: 8px 32px;
+  cursor: pointer;
+  align-items: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+  background: transparent;
+}
+
+.aboutusText div a button:hover {
+  color: #0a142f;
+  background-color: #fafafa;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* end of about section  */
+
+/* portfolio Section  */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.5rem;
+  align-items: center;
+}
+
+.portfolioText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.portfolioTextLeft {
+  width: 90%;
+}
+
+.portfolioTextLeft p {
+  color: #002c66;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.portfolioTextLeft h3 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+
+.portfolioTextLeft h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+
+.portfolioTextRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolioTextRight p {
+  color: #595959;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  /* 35px */
+  letter-spacing: 0.4px;
+}
+
+.portfolioBtn button {
+  color: #595959;
+  background: transparent;
+  margin: 20px 10px;
+  padding: 8px 32px;
+  border: 1px solid #a1a1a1;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.portfolioBtn button:hover {
+  color: #fafafa;
+  background-color: #0a142f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolioImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.pImg {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.pImg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 26, 60, 0.8);
+}
+
+.pImg .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 26, 60, 0.8);
+  /* Transparent blue background */
+  gap: 32px;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 10px 40px 10px;
+}
+
+.pImg .info h3 {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 58.5px */
+  letter-spacing: 1.8px;
+}
+
+.pImg:hover .info {
+  opacity: 1;
+}
+
+.pImg .info p {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  /* 28px */
+  letter-spacing: 0.32px;
+}
+
+.portfolioImg .leftImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.portfolioImg .leftImg img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.portfolioImg .rightImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.portfolioImg .rightImg img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* End of Portfolio Section  */
+/* logo section  */
+.logoSection {
+  background-color: #0a142f;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.logo .logoUp {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.logo .logoDown {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+/* end of logo section  */
+/* quote Section  */
+.quoteSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 5rem 10rem;
+}
+.quoteText p {
+  color: #002c66;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.quoteText h3 {
+  color: #141414;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.quoteImg img {
+  width: 450px;
+  height: 400px;
+}
+.quoteText ul {
+  color: #595959;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%; /* 49px */
+  letter-spacing: 0.56px;
+}
+.quoteText ul li {
+  padding-left: 1.5rem;
+  background-image: url("../images/icons/tickIcon.png");
+  background-position: 0 8px;
+  background-size: 15px 1rem;
+  background-repeat: no-repeat;
+}
+.quoteBtn a button {
+  border: 1px solid #a1a1a1;
+  margin-top: 30px;
+  padding: 8px 32px;
+  background: transparent;
+  color: #595959;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.quoteBtn a button:hover {
+  color: #fafafa;
+  background-color: #0a142f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* end of Quote Section  */
+/* Team Section  */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 4rem;
+  background: #fafafa;
+}
+.teamText p {
+  color: #002c66;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.teamText h3 {
+  color: #141414;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.teamText h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.teamInfo {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.teamInfo img {
+  width: 220px;
+  height: 340px;
+}
+.teamInfo h3 {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 29.9px */
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.teamInfo p {
+  color: #002c66;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+/* End Of Team Section  */
+/* TestimonialSection  */
+.testimonialSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Testimonial\ section.png");
+  background-size: 30rem 31.875rem;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #fff;
+  padding: 4rem;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialText p {
+  color: #002c66;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.testimonialText h3 {
+  color: #141414;
+  font-family: "Playfair Display", "serif";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.testimonialText h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem;
+}
+/* Container for the horizontal slider */
+.horizontal-testimonial-container {
+  width: 100%;
+  min-width: 300px;
+  min-width: 800px;
+  /* Adjust the max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  /* Hide overflowing content */
+  position: relative;
+  /* Add this for relative positioning */
+}
+/* Wrapper for the slider items */
+.testimonial-slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* Smooth sliding transition */
+}
+/* Individual slider item */
+.testimonial-slider-item {
+  flex: 0 0 100%;
+  /* Each item takes up 100% of the container */
+  padding: 0 10px;
+  /* Add some spacing between items */
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  background: transparent;
+}
+/* Numeric pagination buttons */
+.testimonial-slider-pagination {
+  text-align: center;
+}
+.testimonial-pagination-button {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0 5px;
+}
+.testimonial-pagination-button.active {
+  color: #002c66;
+  /* Change the active button color */
+}
+.testimonial-slider-item img {
+  width: 100px;
+  height: 80px;
+}
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.testimonial-content p {
+  color: #595959;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.testimonial-content div {
+  display: flex;
+  align-items: flex-end;
+}
+.testimonial-content div h3 {
+  color: #141414;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 29.9px */
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.testimonial-content div p {
+  color: #002c66;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.32px;
+}
+.testimonial-carouseltoggle {
+  align-self: flex-end;
+}
+
+/* End of TestimonialSection  */
+/* countSection */
+.counterSection {
+  background-color: #0a142f;
+  padding: 4rem;
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  color: #fff;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.count img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+.count p {
+  color: #a1a1a1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+
+/* End of Count Section  */
+/* contactUs Section  */
+.contactUsSection {
+  background: #fafafa;
+  padding: 6rem;
+}
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.contactHeading p {
+  color: #0a142f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.contactHeading h3 {
+  color: #141414;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.contactHeading h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.contactText {
+  width: 100%;
+  min-width: 200px;
+  max-width: 550px;
+}
+.contactText p {
+  color: #141414;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.contactText a button {
+  border: 1px solid #a1a1a1;
+  margin-top: 30px;
+  padding: 8px 32px;
+  background: transparent;
+  color: #595959;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.contactText a button:hover {
+  color: #fafafa;
+  background-color: #0a142f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* End of ContactUs section */
+
+@media screen and (max-width: 576px) {
+  /* hero section */
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero-rightSection img {
+    width: 100%;
+    align-self: center;
+  }
+
+  .herotext {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 0.8rem;
+  }
+
+  .heroHead h2 {
+    font-size: 2.8rem;
+  }
+
+  .hero-rightSection {
+    margin: 10px;
+  }
+
+  .carouseltoggle {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+  }
+  /* End of hero section */
+  /* workSection */
+  .work-title p {
+    font-size: 12px;
+  }
+
+  .work-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .work-Cards {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .work-Cards img {
+    width: 230px;
+    height: 340px;
+  }
+
+  /* end of workSection */
+  /* service section  */
+  .service {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .serviceText {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .serviceHead {
+    width: 100%;
+  }
+
+  .serviceHead h3 {
+    font-size: 25px;
+  }
+
+  .serviceDesc p {
+    font-size: 11px;
+  }
+
+  .serviceImg {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .serviceImg img {
+    width: 300px;
+  }
+
+  .serviceImg .serviceImg2 {
+    align-self: flex-start;
+  }
+
+  /* end of service section  */
+  /* aboutus section  */
+  .aboutus {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .aboutusText {
+    width: 100%;
+  }
+
+  .aboutusImg img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .aboutusText p {
+    font-size: 10px;
+  }
+
+  .aboutusText h3 {
+    font-size: 33px;
+  }
+
+  .aboutusText div a button {
+    font-size: 13px;
+    padding: 6px 16px;
+  }
+
+  /* end of about us section  */
+  /* portfolio section  */
+  .portfolioText {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .portfolioTextLeft {
+    width: 100%;
+  }
+
+  .portfolioTextLeft p {
+    font-size: 10px;
+  }
+
+  .portfolioTextLeft h3 {
+    font-size: 35px;
+  }
+
+  .portfolioTextRight {
+    font-size: 12px;
+  }
+
+  .portfolioImg .leftImg img,
+  .portfolioImg .rightImg img {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+
+  .portfolioImg {
+    gap: 1rem;
+  }
+
+  .portfolioImg .rightImg,
+  .portfolioImg .leftImg {
+    gap: 1rem;
+  }
+
+  /* end of portfolio section  */
+  /* logo section  */
+  .logo {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo .logoUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .logo .logoDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  /* end of logo Section  */
+  /* quoteSection */
+  .quote {
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .quoteText p {
+    font-size: 10px;
+  }
+  .quoteText h3 {
+    font-size: 35px;
+  }
+  .quoteText ul {
+    font-size: 15px;
+  }
+  .quoteImg img {
+    width: 300px;
+    height: 250px;
+  }
+  /* end of QuoteSection  */
+  /* TeamSection  */
+  .team {
+    padding: 1rem;
+  }
+  .teamInfo {
+    flex-direction: column;
+  }
+  .teamInfo img {
+    width: 180px;
+    height: 240px;
+  }
+  .teamText h3 {
+    font-size: 30px;
+  }
+  /* End of TeamSection  */
+  /* Testimonial Section  */
+  .testimonialSection {
+    background-size: 120px 300px;
+    padding: 2rem;
+  }
+  .testimonialText p {
+    font-size: 12px;
+  }
+
+  .testimonialText h3 {
+    font-size: 21px;
+  }
+  .testimonials {
+    min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .testimonial-slider-item {
+    flex-direction: column;
+  }
+  .testimonial-slider-item img {
+    width: 50px;
+    height: 40px;
+  }
+  .testimonial-content p {
+    font-size: 12px;
+  }
+  .testimonial-content div h3 {
+    font-size: 15px;
+  }
+  .testimonial-content div p {
+    font-size: 11px;
+  }
+  .testimonial-slider-item {
+    gap: 10px;
+  }
+  .testimonial-carouseltoggle {
+    align-self: center;
+  }
+  .testimonial-pagination-button {
+    margin-top: 20px;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .horizontal-testimonial-container {
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+  }
+  /* end of Testimonial Section  */
+  /* countSection */
+  .counter {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* End of Count Section  */
+  /* contactUs Section  */
+  .contactUsSection {
+    padding: 4.6rem 2.3rem;
+  }
+  .contactUs {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contactHeading p {
+    font-size: 13px;
+  }
+  .contactHeading h3 {
+    font-size: 30px;
+  }
+  .contactText p {
+    font-size: 13px;
+  }
+  .contactText a button {
+    font-size: 13px;
+  }
+
+  /* End of ContactUs section */
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* hero section */
+  .hero-rightSection img {
+    width: 350px;
+    align-self: center;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .heroHead h2 {
+    font-size: 2.5rem;
+  }
+
+  .herotext {
+    font-size: 12px;
+  }
+
+  .hero-rightSection {
+    margin: 10px;
+  }
+
+  /* End of hero section */
+  /* workSection */
+  .work-title p {
+    font-size: 12px;
+  }
+
+  .work-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .work-Cards {
+    gap: 1em;
+  }
+
+  .work-Cards img {
+    width: 230px;
+    height: 340px;
+  }
+
+  /* end of workSection */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* hero section */
+  .hero-rightSection img {
+    width: 400px;
+    align-self: center;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .heroHead h2 {
+    font-size: 2rem;
+  }
+
+  .hero-rightSection {
+    margin: 10px;
+  }
+
+  /* End of hero section */
+  /* workSection */
+  .work-title p {
+    font-size: 12px;
+  }
+
+  .work-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .work-Cards {
+    gap: 1em;
+  }
+
+  .work-Cards img {
+    width: 230px;
+    height: 340px;
+  }
+
+  /* end of workSection */
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* hero section */
+  .hero-rightSection img {
+    width: 450px;
+    align-self: center;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .heroHead h2 {
+    font-size: 3rem;
+  }
+
+  .hero-rightSection {
+    margin: 10px;
+  }
+
+  /* End of hero section */
+  /* workSection */
+  .work-title p {
+    font-size: 12px;
+  }
+
+  .work-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .work-Cards {
+    gap: 1em;
+  }
+
+  .work-Cards img {
+    width: 230px;
+    height: 340px;
+  }
+
+  /* end of workSection */
+}
+
+@media (min-width: 1400px) {
+  /* hero section  */
+  .heroHead h2 {
+    font-size: 70px;
+  }
+
+  .heroHead > p {
+    font-size: 16px;
+  }
+  .hero-rightSection {
+    max-width: 900px;
+  }
+  .hero-rightSection img {
+    width: 100%;
+  }
+
+  .horizontal-slider-container {
+    max-width: 930px;
+  }
+
+  .hero-leftSection .hero-greet {
+    font-weight: 600;
+    line-height: 175%;
+    letter-spacing: 6.4px;
+  }
+
+  .hero-leftSection {
+    gap: 128px;
+  }
+
+  .heroLinks {
+    gap: 16px;
+    line-height: 175%;
+    /* 28px */
+    letter-spacing: 1.28px;
+  }
+
+  .heroText .carouseltitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 175%;
+    letter-spacing: 0.36px;
+  }
+
+  /* end of hero section  */
+  /* service section  */
+  .serviceImg {
+    height: 500px;
+  }
+
+  .serviceHead h3 {
+    font-size: 64px;
+  }
+
+  .serviceImg img {
+    width: 550px;
+    height: 350px;
+  }
+
+  .serviceDesc {
+    font-size: 18px;
+  }
+
+  .serviceBtn .serviceLearnMore {
+    font-size: 16px;
+  }
+
+  .serviceImg a {
+    font-size: 32px;
+  }
+
+  /* end of service section  */
+  /* aboutus Section  */
+  .aboutusText p {
+    font-size: 16px;
+  }
+
+  .aboutusImg img {
+    width: 970px;
+    height: 600px;
+  }
+
+  .aboutusText .aboutusintro {
+    font-size: 16px;
+  }
+
+  .aboutusText h3 {
+    font-size: 64px;
+  }
+
+  .aboutusText div a button {
+    font-size: 16px;
+  }
+
+  /* end of aboutus section  */
+  /* portfolio section  */
+  .portfolioTextLeft p {
+    font-size: 16px;
+  }
+
+  .portfolioTextLeft h3 {
+    font-size: 64px;
+  }
+
+  .portfolioBtn button {
+    font-size: 16px;
+  }
+
+  .portfolioImg .leftImg img {
+    width: 400px;
+    height: 500px;
+  }
+
+  .portfolioImg .rightImg img {
+    width: 350px;
+    height: 450px;
+  }
+
+  /* end of portfolio section  */
+  /* logo section  */
+  .logo {
+    padding: 6rem;
+    gap: 6rem;
+  }
+  .logo .logoUp {
+    gap: 15rem;
+  }
+  .logo .logoDown {
+    gap: 15rem;
+  }
+  .logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* end of logo Section  */
+
+  /* Quote Section  */
+  .quoteText p {
+    font-size: 19px;
+  }
+  .quoteText h3 {
+    font-size: 90px;
+  }
+  .quoteImg img {
+    width: 650px;
+    height: 600px;
+  }
+  .quoteText ul {
+    font-size: 28px;
+  }
+  .quoteText ul li {
+    padding-left: 2.2rem;
+    background-position: 0 15px;
+    background-size: 25px 22px;
+    background-repeat: no-repeat;
+  }
+  .quoteBtn button {
+    font-size: 16px;
+  }
+  /* End of Quote Section  */
+  /* Team Section  */
+  .teamText p {
+    font-size: 16px;
+  }
+  .teamText h3 {
+    font-size: 64px;
+  }
+  .teamInfo {
+    padding: 4rem;
+  }
+  .teamInfo h3 {
+    font-size: 23px;
+  }
+  .teamInfo p {
+    font-size: 16px;
+  }
+  .teamInfo img {
+    width: 300px;
+    height: 450px;
+  }
+  /* End of Team Section  */
+  /* TestimonialSection  */
+  .testimonialSection {
+    background-size: 120px 300px;
+    padding: 2rem;
+  }
+  .testimonialText p {
+    font-size: 19px;
+  }
+
+  .testimonialText h3 {
+    font-size: 50px;
+  }
+  .testimonials {
+    min-width: 300px;
+    max-width: 1100px;
+    width: 100%;
+  }
+  .testimonial-slider-item img {
+    width: 120px;
+    height: 90px;
+  }
+  .testimonial-content p {
+    font-size: 22px;
+  }
+  .testimonial-content div h3 {
+    font-size: 27px;
+  }
+  .testimonial-content div p {
+    font-size: 18px;
+  }
+  .testimonial-slider-item {
+    gap: 25px;
+  }
+  .testimonial-carouseltoggle {
+    align-self: flex-end;
+  }
+  .testimonial-pagination-button {
+    font-size: 20px;
+  }
+  .horizontal-testimonial-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1100px;
+  }
+  /* End of TestimonialSection  */
+  /* countSection  */
+  .counter {
+    gap: 170px;
+  }
+  .count p {
+    font-size: 16px;
+  }
+  /* End Of Count Section  */
+  /* contactUs Section  */
+  .contactUs {
+    gap: 120px;
+  }
+  .contactHeading p {
+    font-size: 16px;
+  }
+  .contactHeading h3 {
+    font-size: 64px;
+  }
+  .contactText {
+    width: 100%;
+    max-width: 800px;
+  }
+  .contactText p {
+    font-size: 18px;
+  }
+  .contactText a button {
+    padding: 8px 32px;
+    font-size: 18px;
+  }
+  /* End of ContactUs section */
+}

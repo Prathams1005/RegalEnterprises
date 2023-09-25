@@ -1,0 +1,111 @@
+footer {
+  background-color: #0a142f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 5rem;
+  padding: 0 20px;
+}
+footer h3 {
+  font-weight: normal;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #d96a35;
+  padding-bottom: 2px;
+}
+footer p {
+  font-size: 16px;
+}
+.footer-icon {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.social-logo {
+  width: 35px;
+  transition: all 0.5s ease-out;
+}
+.special-links ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.special-links ul li {
+  padding-left: 1.2rem;
+  background-image: url("../images/icons/line.png");
+  background-position: 0 0;
+  background-size: 0.6rem 1rem;
+  background-repeat: no-repeat;
+}
+.footer-contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.footer-contact p a {
+  text-decoration: none;
+  color: #fff;
+}
+.special-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.special-links ul a:hover {
+  font-size: 16.5px;
+}
+
+.special-links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.newsletter {
+  display: flex;
+  height: 10%;
+  font-family: "Playfair Display", serif;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.newsletter div input {
+  max-width: 80px;
+  padding: 8px;
+  font-size: 15px;
+  color: black;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border: 2px solid #fff;
+  margin-right: -10px;
+}
+.newsletter div button {
+  border: 2px solid #1363df;
+  background-color: #1363df;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 15px;
+  color: #fff;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .footerMain {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 992px) {
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+}

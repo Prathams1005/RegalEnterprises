@@ -1,0 +1,527 @@
+.container {
+  padding: 1.5rem 4rem;
+}
+/* hero Section  */
+.heroSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 250px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+}
+.heroText h3 {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 117px */
+  letter-spacing: 3.6px;
+  text-transform: capitalize;
+}
+.heroText p {
+  color: #0a142f;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.heroImg img {
+  width: 100%;
+  max-width: 650px;
+  min-width: 100px;
+  height: 400px;
+}
+
+/* End Of Hero Section  */
+
+/* History Section */
+.historySection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Testimonial\ section.png");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #0a142f;
+  color: #fff;
+  padding: 2rem;
+}
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.historyText {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+}
+.historyImg img {
+  min-width: 300px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  height: 100%;
+}
+.historyHead {
+  margin-bottom: 30px;
+}
+.historyHead p {
+  color: #fa9483;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%; /* 31.5008px */
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+}
+.historyHead h3 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.historyText p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem; /* 2.1875rem */
+  letter-spacing: 0.4px;
+}
+/* End of History Section  */
+/* Creative section  */
+.creativeSection {
+  background-image: url("/RegalEnterprises/public/images/PNG/Creative\ eye\ \ section\ map.png");
+  background-size: 25rem 21.875rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #fafafa;
+}
+.creative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 5rem;
+}
+.creativeText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
+}
+.creativeTextLeft p {
+  color: #0a142f;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.creativeTextLeft h3 {
+  color: #141414;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.creativeTextLeft h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.creativeTextRight p {
+  color: #595959;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+  max-width: 550px;
+  width: 100%;
+}
+.creativeImg img {
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
+}
+/* end of creative section  */
+/* Team Section  */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 4rem;
+  background: #fafafa;
+}
+.teamText p {
+  color: #002c66;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.teamText h3 {
+  color: #141414;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.teamText h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.teamInfo {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.teamInfo img {
+  width: 220px;
+  height: 340px;
+}
+.teamInfo h3 {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 29.8992px */
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.teamInfo p {
+  color: #002c66;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+/* End Of Team Section  */
+/* CustomerSection  */
+
+/* End of CustomerSection  */
+/* countSection */
+.counterSection {
+  background-color: #0a142f;
+  padding: 4rem;
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  color: #fff;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.count img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+.count p {
+  color: #a1a1a1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+
+/* End of Count Section  */
+/* contactUs Section  */
+.contactUsSection {
+  background: #fafafa;
+  padding: 6rem;
+}
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.contactHeading p {
+  color: #0a142f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.contactHeading h3 {
+  color: #141414;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 2.56px;
+  text-transform: capitalize;
+}
+.contactHeading h3 span {
+  border-bottom: 1px solid #002c66;
+  padding-bottom: 2px;
+}
+.contactText {
+  width: 100%;
+  min-width: 200px;
+  max-width: 550px;
+}
+.contactText p {
+  color: #141414;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  letter-spacing: 0.32px;
+}
+.contactText a button {
+  border: 1px solid #a1a1a1;
+  margin-top: 30px;
+  padding: 8px 32px;
+  background: transparent;
+  color: #595959;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 28px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.contactText a button:hover {
+  color: #fafafa;
+  background-color: #0a142f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* End of ContactUs section */
+
+@media screen and (max-width: 576px) {
+  /* hero Section  */
+  .hero {
+    gap: 2rem;
+  }
+  .heroText {
+    align-items: center;
+  }
+  /* End of Hero Section  */
+  /* history Section  */
+  .history {
+    gap: 30px;
+  }
+  .historyHead p {
+    font-size: 14px;
+  }
+  .historyHead h3 {
+    font-size: 43px;
+  }
+  .historyText p {
+    font-size: 15px;
+  }
+  /* End Of History section  */
+  /* Creative Section  */
+  .creativeText {
+    flex-wrap: wrap;
+  }
+  .creativeTextLeft p {
+    font-size: 12px;
+  }
+  .creativeTextRight p {
+    font-size: 13px;
+  }
+  .creativeImg img {
+    height: 150px;
+  }
+  /* End Of Creative Section  */
+  /* TeamSection  */
+  .team {
+    padding: 1rem;
+  }
+  .teamText h3 {
+    font-size: 30px;
+  }
+  .teamInfo {
+    flex-direction: column;
+  }
+  .teamInfo img {
+    width: 180px;
+    height: 240px;
+  }
+  /* End of TeamSection  */
+  /* countSection */
+  .counter {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .count {
+    min-width: 200px;
+  }
+  /* End of Count Section  */
+  /* contactUs Section  */
+  .contactUsSection {
+    padding: 4.6rem 2.3rem;
+  }
+  .contactUs {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contactHeading p {
+    font-size: 13px;
+  }
+  .contactHeading h3 {
+    font-size: 30px;
+  }
+  .contactText p {
+    font-size: 13px;
+  }
+  .contactText a button {
+    font-size: 13px;
+  }
+
+  /* End of ContactUs section */
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  /* hero Section  */
+  .heroText h3 {
+    font-size: 75px;
+  }
+  .heroText p {
+    font-size: 16px;
+  }
+  .heroImg img {
+    max-width: 1000px;
+  }
+  /* End of Hero Section  */
+  /* history Section  */
+  .history {
+    justify-content: center;
+    gap: 150px;
+  }
+  .historyHead p {
+    font-size: 17px;
+  }
+  .historyHead h3 {
+    font-size: 70px;
+  }
+  /* end of History Section  */
+  /* creative Section  */
+  .creativeSection {
+    background-size: 35rem 31.875rem;
+  }
+  .creativeText {
+    max-width: 1200px;
+  }
+  .creativeTextRight {
+    font-size: 16px;
+    max-width: 650px;
+  }
+  .creativeTextLeft h3 {
+    font-size: 60px;
+  }
+  .creativeImg img {
+    max-width: 1200px;
+  }
+  /* End Of Creative Section  */
+  /* Team Section  */
+  .teamText p {
+    font-size: 16px;
+  }
+  .teamText h3 {
+    font-size: 64px;
+  }
+  .teamInfo {
+    padding: 4rem;
+  }
+  .teamInfo h3 {
+    font-size: 23px;
+  }
+  .teamInfo p {
+    font-size: 16px;
+  }
+  .teamInfo img {
+    width: 300px;
+    height: 450px;
+  }
+  /* End of Team Section  */
+  /* countSection  */
+  .counter {
+    gap: 170px;
+  }
+  .count p {
+    font-size: 16px;
+  }
+  /* End Of Count Section  */
+  /* contactUs Section  */
+  .contactUs {
+    gap: 120px;
+  }
+  .contactHeading p {
+    font-size: 16px;
+  }
+  .contactHeading h3 {
+    font-size: 64px;
+  }
+  .contactText {
+    width: 100%;
+    max-width: 800px;
+  }
+  .contactText p {
+    font-size: 18px;
+  }
+  .contactText a button {
+    padding: 8px 32px;
+    font-size: 18px;
+  }
+  /* End of ContactUs section */
+}

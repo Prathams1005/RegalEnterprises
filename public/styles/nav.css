@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fafafa;
+}
+.nav-logo img {
+  max-width: 100%;
+  width: 200px;
+  height: 80px;
+}
+.navbar .nav-logo {
+  padding-top: 5px;
+}
+.nav-menu {
+  display: flex;
+  gap: 2em;
+  font-size: 16px;
+}
+
+/* .nav-menu li:hover {
+  color: #002c66;
+  font-size: 16.5px;
+  text-decoration: underline #002c66 2px;
+} */
+
+.nav-menu li {
+  padding: 5px 14px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #141414;
+  text-transform: uppercase;
+}
+/* Add this CSS for the active link underline */
+.nav-menu a.active {
+  border-bottom: 2px solid #002c66;
+  padding-bottom: 3px;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 16px 0;
+    z-index: 1;
+    transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
+    opacity: 0; /* Start with opacity 0 to hide initially */
+    transform: translateY(-10px); /* Move it up and out of sight */
+  }
+
+  .nav-menu li:hover {
+    display: inline-block;
+    color: #002c66;
+    font-size: 16.5px;
+  }
+
+  .nav-menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .nav-menu {
+    display: block;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down */
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .nav-logo {
+    margin-left: 10px;
+  }
+  .nav-links {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 16px 0;
+    z-index: 1;
+  }
+
+  .nav-menu li:hover {
+    display: inline-block;
+    color: #002c66;
+    font-size: 16.5px;
+  }
+
+  .nav-menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .nav-menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .nav-menu a {
+    font-size: 12px;
+  }
+  .nav-menu a:hover {
+    font-size: 12.1px;
+    gap: 1.8rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+@media (min-width: 2000px) {
+}

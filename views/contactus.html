@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles Link-->
+    <link rel="stylesheet" href="../public/styles/nav.css" />
+    <link rel="stylesheet" href="../public/styles/contactUs.css" />
+    <link rel="stylesheet" href="../public/styles/footer.css" />
+    <!-- Google Fonts Playfair Display and Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Contact US</title>
+  </head>
+  <body id="contact">
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("../views/static/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <!-- heroSection  -->
+    <section class="heroSection">
+      <div class="hero">
+        <div class="heroText">
+          <h3>Contact Us</h3>
+          <p>Home > Contact Us</p>
+        </div>
+        <div class="heroImg">
+          <img src="../public/images/Photos/regal.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end of heroSection  -->
+    <!-- contactUsSection  -->
+    <section class="contactUsSection">
+      <div class="contactUs container">
+        <div class="contactUsLeft">
+          <div class="contactUsHead">
+            <p>Contact us</p>
+            <h3>Say <span>Hello</span></h3>
+          </div>
+          <div class="contactUsAdd">
+            <p>Shop No 1, Gopani Nagar, Agashi Rd, Bolinj ,Virar West.</p>
+            <p class="email">
+              Email:
+              <a href="mailto:regalenterprises07@gmail.com" target="_blank"
+                >regalenterprises07@gmail.com</a
+              >
+            </p>
+            <p>
+              Mobile: +91 8698844427 <br />
+              Mobile: +91 8600684427
+            </p>
+          </div>
+          <div class="gmap">
+            <img src="../public/images/Photos/gmap.png" alt="" />
+          </div>
+        </div>
+        <div class="contactUsRight">
+          <label for="">Name</label>
+          <input type="text" name="" id="" />
+          <label for="">Mobile *</label>
+          <input type="text" name="" id="" />
+          <label for="">Email Id *</label>
+          <input type="text" name="" id="" />
+          <label for="">Message *</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <div>
+            <a href="#"><button>Submit</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mailUs container">
+      <div class="mailUsText">
+        <h3>We Turn designs into art</h3>
+        <p>
+          Did your vision align with ours? Got ideas? lets realise them
+          together.
+        </p>
+      </div>
+      <div class="mailUsBtn">
+        <a href="mailto:regalenterprises07@gmail.com" target="_blank"
+          ><button>Mail Us</button></a
+        >
+      </div>
+    </div>
+    <!-- End of contactUsSection  -->
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("../views/static/footer.html");
+      });
+    </script>
+    <script src="/RegalEnterprises/public/JS/nav.js"></script>
+    <!--end of footer-->
+  </body>
+</html>
